@@ -1,0 +1,689 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.mj-navbar {
+    height: 3.75rem;
+    background-color: #f0d41d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.mj-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.mj-categories a {
+    text-decoration: none;
+    color: rgb(99, 96, 96);
+    margin: 0.8rem;
+    font-size: 1rem;
+}
+.mj-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mj-searchbar {
+    border: none;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    height: 2rem;
+    text-align: left;
+    margin-right: 0.2rem;
+    padding: 0 1rem;
+    width: 10rem;
+}
+.mj-searchicon {
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mj-searchicon i {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: rgb(87, 86, 86);
+}
+.mj-menus {
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mj-cart, .mj-menu {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+}
+.mj-cart {
+    background-color: red;
+}
+.mj-menu {
+    background-color: #1c1b18;
+}
+
+.mj-heroSection {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://www.manjooran.com/wp-content/themes/manjooran/img/img_1.png");
+    background-size: cover;
+    background-position: center;
+}
+.mj-heading {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.mj-hcolor {
+    color: white;
+}
+.mj-shopnow {
+    color: white;
+    position: relative;
+    top: 2.5rem;
+}
+.mj-herocontent {
+    position: relative;
+    top: 6.25rem;
+}
+
+.mj-itemsSection {
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.mj-is1 {
+    height: 15rem;
+    width: 14rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mj-is1 p {
+    margin-top: 1.5rem;
+}
+
+.handbag, .lighting, .kids, .watches, .kitchen {
+    width: 60%;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+}
+.handbag {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/gJ6IDutIkxfiRVKBLQRARoaRJiY=/250x250/cdn.vox-cdn.com/uploads/chorus_asset/file/3131860/american-apparel.0.jpg");
+}
+.lighting {
+    background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-05/enhanced/webdr06/5/11/enhanced-19818-1399302569-9.jpg?downsize=900:*&output-format=auto&output-quality=auto");
+}
+.kids {
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPCOPfyAoVebRx7spGuDRO1I_5cF07TThNSE9FODbCbXCbyYUx");
+}
+.watches {
+    background-image: url("https://douj.ly/images/detailed/6379/32_seqf-qz.jpg");
+}
+.kitchen {
+    background-image: url("https://www.krupsusa.com/medias/?context=bWFzdGVyfGltYWdlc3w2OTAyOXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneVpTOW9OV1l2TWpZNE56VTFPVFUxTWpJd056Z3wwZWMxYzJiOTI1YjE5NmVlMThkZDhmZGU5ZDdkNTY3NjY4NTNlM2Q5MzhkMmI4YmFmOTE3MGVlYTIyOGIxMDA1");
+}
+
+.mj-DesktopTableSection {
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.mj-dts1 {
+    width: 90%;
+    max-width: 35rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table {
+    width: 95%;
+    height: 24.5rem;
+    background-image: url("https://perabotcahayajati.weebly.com/uploads/1/2/0/2/120238677/editor/img-2571.jpeg?1529375688");
+    background-size: cover;
+    background-position: center;
+    margin-top: 0.5rem;
+}
+.t {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+.t p {
+    line-height: 1.5rem;
+}
+.t button {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+.line1{
+    font-weight: bolder;
+}
+.line2{
+    font-size:0.8rem;
+    font-weight:bolder;
+    color:grey;
+}
+.computer{
+    background-image:url("https://www.alhabibpaneldoors.com/download.php?file=images/items-item/computer-table-hpd290.jpg");
+}
+.circletime{
+    height:3.5rem;
+    width:3.5rem;
+    background-color:#f0d41d;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    top:1rem;
+    left:1rem;
+}
+
+.mj-DesktopTableContent {
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.mj-dtc {
+    background-color: white;
+    width: 17.5rem;
+    height: auto;
+}
+.pic {
+    height: 15rem;
+    width: 100%;
+    background-image: url("https://perabotcahayajati.weebly.com/uploads/1/2/0/2/120238677/editor/img-2571.jpeg?1529375688");
+    background-size: cover;
+    background-position: center;
+}
+.c1 {
+    background-color: #1c1b18;
+    height: 100%;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c2 {
+    background-color: red;
+    height: 100%;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c1 a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.mj-emailSection {
+    height: auto;
+    padding: 1rem;
+    background-color: #f5df52;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.paypal, .email, .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.email {
+    flex: 1 1 40%;
+}
+.subscribe {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.pp {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vGng5fOP2offMqnVx1dbqpYVO9SpptB3Lw&s");
+}
+.visa {
+    background-image: url("https://1000logos.net/wp-content/uploads/2017/06/VISA-Logo-1992.png");
+}
+.ae {
+    background-image: url("https://www.africa-newsroom.com/files/thumb/2a1eec33e62eca1/600/418");
+}
+.mc {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeWd4Ap5lQfuvPZDtCa6voxLyr9_9MIcUXQ&s");
+}
+
+.mj-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: white;
+    padding: 2rem;
+}
+.content {
+    line-height: 1.7rem;
+    max-width: 15rem;
+}
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.content i {
+    margin-right: 1rem;
+}
+.content li {
+    list-style-type: none;
+}
+.n {
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 0.2rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mj-aboutus{
+    height:5rem;
+    background-color:white;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.mj-aboutus p{
+    font-size:2rem;
+    font-weight:bolder;
+    margin-left:8rem;
+}
+.mj-data{
+    width:100%;
+    height:28rem;
+    background-color:rgb(238, 237, 237);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.mj-para{
+    width:80%;
+    height:24rem;
+    background:white;
+    
+}
+.mj-para p{
+    margin-top:1rem;
+    margin-left:1rem;
+    text-align:left;
+    color:grey;
+}
+.aboutus {
+  height: 5rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutus p {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: 8rem;
+}
+.aboutus {
+  height: 5rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutus p {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: 8rem;
+}
+
+.data {
+  width: 100%;
+  height: 28rem;
+  background-color: rgb(238, 237, 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.para {
+  width: 50%;
+  height: 24rem;
+  background: white;
+}
+
+.options {
+  height: 16rem;
+  width: 20%;
+  background-color: white;
+  margin-left: 1rem;
+  margin-top: -8rem;
+}
+
+.options p {
+  color: gray;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.options a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+form {
+  background-color: white;
+  padding: 1.25rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  border-radius: 0.1rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.note {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(222, 211, 211);
+  padding: 0.3rem 0.6rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.submit-btn .triangle {
+  margin-right: 0.4rem;
+  font-size: 0.6rem;
+}
+
+@media (max-width: 768px) {
+     .mj-navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+
+    .mj-brand {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mj-categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .mj-categories a {
+        font-size: 0.9rem;
+        margin: 0.4rem;
+    }
+
+    .mj-searchbar {
+        width: 8rem;
+        font-size: 0.9rem;
+    }
+
+    .mj-searchicon {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .mj-searchicon i {
+        font-size: 0.7rem;
+    }
+
+    .mj-menus {
+        width: auto;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .mj-cart, .mj-menu {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.5rem;
+    }
+    .mj-heroSection {
+        height: 70vh;
+    }
+    .mj-heading {
+        font-size: 2rem;
+    }
+    .mj-itemsSection, .mj-DesktopTableSection, .mj-DesktopTableContent {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .mj-is1, .mj-dts1, .mj-dtc {
+        width: 90%;
+    }
+    .mj-footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .mj-aboutus {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .mj-aboutus p {
+        font-size: 1.4rem;
+        margin-left: 0;
+    }
+
+    .mj-data {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .mj-para {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .aboutus {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .aboutus p {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+    .data {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .para {
+    width: 95%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .options {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -2rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mj-navbar {
+        flex-wrap: wrap;
+    }
+    .mj-searchbar {
+        width: 20rem;
+    }
+    .mj-itemsSection, .mj-DesktopTableSection, .mj-DesktopTableContent {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .mj-is1, .mj-dts1, .mj-dtc {
+        flex: 0 1 45%;
+    }
+    .mj-aboutus {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .mj-aboutus p {
+        margin-left: 0;
+        font-size: 1.8rem;
+    }
+
+    .mj-data {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .mj-para {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .aboutus {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .aboutus p {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+    .data {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .para {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .options {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -2rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
